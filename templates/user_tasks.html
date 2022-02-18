@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table, th, td {
+            border: 1px solid;
+        }
+    </style>
+    <head><title>{{username}}'s Tasks</title></head>
+    <body>
+        <u><h3>{{username}}'s Tasks</h1></u>
+        <table>
+            {% for row in rows %}
+                <tr>
+                    {% for col in row %}
+                        <th>{{col}}</th>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
